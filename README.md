@@ -39,6 +39,29 @@ Test your Marvel knowledge by identifying characters from blurred images. Each g
 * Mongoose
 * Express Validator
 
+## Docker
+
+The application is fully Dockerized with separate containers for the frontend and backend.
+
+### Frontend
+
+```bash
+docker build -t marvel-quiz-frontend ./frontend
+docker run -p 5173:5173 --name marvel-quiz-frontend marvel-quiz-frontend
+```
+
+### Backend
+
+```bash
+docker build -t marvel-quiz-backend ./backend
+docker run -p 8000:8000 --env-file ./backend/.env --name marvel-quiz-backend marvel-quiz-backend
+```
+
+The frontend runs on port `5173`, while the backend runs on port `8000`. MongoDB is hosted using MongoDB Atlas.
+
+Both containers have been tested together locally and the complete application works successfully with Docker.
+
+
 ### Other
 
 * Docker
