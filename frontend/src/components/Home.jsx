@@ -8,7 +8,7 @@ function Home() {
         <main
             className="min-h-screen bg-cover bg-center bg-no-repeat"
             style={{
-                backgroundImage: "url('../public/images/marvel.jpg')",
+                backgroundImage: "url('images/marvel.jpg')",
             }}
         >
             <div className="flex min-h-screen items-center justify-center bg-black/50 px-6 pt-20">
