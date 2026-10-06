@@ -23,7 +23,6 @@ function Leaderboard() {
                 }
 
                 const data = await response.json();
-                console.log(data.data)
                 setScores(data.data)
             } catch (error) {
                 setError(error)
